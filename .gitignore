@@ -1,0 +1,11 @@
+# Archivos privados o locales que no deben versionarse
+.env
+notas-privadas.txt
+
+# Dependencias
+node_modules/
+
+# Sistema y editor
+.DS_Store
+Thumbs.db
+.vscode/
