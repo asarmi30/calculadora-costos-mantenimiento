@@ -1,28 +1,55 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Calculadora de costos de mantenimiento</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Calculadora de costos de mantenimiento</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Calculadora de costos de mantenimiento</h1>
 
-  <div class="formulario">
-    <input id="nombre" placeholder="Actividad (ej. Corregir error de login)">
-    <select id="categoria">
-      <option>Correctivo</option>
-      <option>Adaptativo</option>
-      <option>Perfectivo</option>
-      <option>Preventivo</option>
+    <h1>Calculadora de costos de mantenimiento</h1>
+
+    <div class="formulario">
+
+        <input
+            id="nombre"
+            placeholder="Actividad (ej. Corregir error de login)"
+        >
+
+        <select id="categoria">
+            <option>Correctivo</option>
+            <option>Adaptativo</option>
+            <option>Perfectivo</option>
+            <option>Preventivo</option>
+        </select>
+
+        <input
+            id="horas"
+            type="number"
+            placeholder="Horas"
+        >
+
+        <button id="agregar">Agregar</button>
+
+    </div>
+
+    <!-- Filtro por categoría - HU5 -->
+    <select id="filtro">
+        <option>Todas</option>
+        <option>Correctivo</option>
+        <option>Adaptativo</option>
+        <option>Perfectivo</option>
+        <option>Preventivo</option>
     </select>
-    <input id="horas" type="number" placeholder="Horas">
-    <button id="agregar">Agregar</button>
-  </div>
 
-  <ul id="lista"></ul>
-  <p id="total"></p>
+    <!-- Lista de actividades -->
+    <ul id="lista"></ul>
 
-  <script src="app.js"></script>
+    <!-- Total de costos -->
+    <p id="total"></p>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
