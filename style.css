@@ -2,3 +2,4 @@ body { font-family: Arial, sans-serif; width: 600px; margin: 40px auto; }
 .formulario { display: flex; gap: 8px; margin-bottom: 16px; }
 .formulario input[id="nombre"] { flex: 1; }
 li { padding: 6px 0; }
+.error { color: #b00020; }
